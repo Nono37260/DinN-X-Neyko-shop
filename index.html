@@ -127,7 +127,7 @@
             background-color: #005bb5;
         }
 
-        .about, .testimonials, .contact, .faq {
+        .about, .testimonials, .contact, .faq, .tools {
             background-color: #1a1a1a;
             padding: 40px 20px;
             margin: 20px 0;
@@ -200,6 +200,29 @@
             color: #ccc;
         }
 
+        .tools {
+            text-align: center;
+        }
+
+        .tools h3 {
+            color: #00aaff;
+            margin-bottom: 20px;
+        }
+
+        .tools p {
+            color: #ccc;
+        }
+
+        .tools a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .tools a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #003366;
             color: white;
@@ -236,6 +259,7 @@
         <a href="#produits">Produits</a>
         <a href="#about">À propos</a>
         <a href="#testimonials">Témoignages</a>
+        <a href="#tools">Outils</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -289,6 +313,17 @@
         </div>
     </div>
 
+    <div class="container tools" id="tools">
+        <h2>Outils de Cybersécurité</h2>
+        <div class="tool">
+            <h3>Outil DinN - Cyberinformation Tool</h3>
+            <p>Notre outil de cybersécurité vous permet de récupérer des informations sur une adresse IP, de faire des recherches WHOIS, de vérifier les vulnérabilités CVE, et de générer des mots de passe sécurisés.</p>
+            <p><strong>Installation :</strong> Pour utiliser cet outil, vous devez installer les dépendances nécessaires. Exécutez la commande suivante :</p>
+            <pre><code>pip install folium requests</code></pre>
+            <p><a href="https://github.com/votre-repo/tool-by-dinn.py" target="_blank">Télécharger l'outil</a></p>
+        </div>
+    </div>
+
     <div class="container faq" id="faq">
         <h2>FAQ</h2>
         <h3>Comment fonctionne le paiement ?</h3>
@@ -299,7 +334,7 @@
 
     <div class="container contact" id="contact">
         <h2>Contactez-nous</h2>
-        <form action="#" method="post">
+        <form action="mailto:noham.ouazine@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Votre nom" required>
             <input type="email" name="email" placeholder="Votre email" required>
             <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
